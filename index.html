@@ -213,6 +213,28 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8031749, 126.6859684), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506071898 1F  139.0(42.0평) 3,000/200 대동리 106-39 건물전체</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.6861731, 126.6868482), 
                 map: map,
                 image: markerImage
@@ -222,6 +244,72 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2507301140   0.0(0.0평) 500/90 구산동 1493-3 1493-3 1층건물의 1층호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 5; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8010985, 126.6881419), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505651013   0.0(0.0평) 7,000/500 대동리 70-6 -<br>2509929117   905.1(273.8평) 7,000/500 대동리 70-6 건물전부<br>2506050340 1F  905.1(273.8평) 7,000/500 대동리 70-6 -<br>2507208876 1F  905.1(273.8평) 10,000/500 대동리 70-6 -<br>2510069520 2F  905.1(273.8평) 7,000/500 대동리 70-6 전부</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8150126, 126.6904303), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507535275 1F  165.0(49.9평) 3,000/300 대동리 313-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8168428, 126.6912569), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506935350   0.0(0.0평) 5,000/350 대동리 344 전체</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -389,6 +477,28 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.728, 126.7166833), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506680182 1F  56.57(17.1평) 2,000/90 다율동 991-8 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.7267322, 126.7166853), 
                 map: map,
                 image: markerImage
@@ -398,6 +508,50 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2509234058 1F  141.6(42.8평) 5,000/260 다율동 1001-5 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7284993, 126.7167131), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508628928 1F  99.06(30.0평) 2,000/120 다율동 991-4 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7286213, 126.7167451), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506354336 1F  46.3(14.0평) 1,000/60 다율동 991-3 991-3 1층상가 일부호<br>2507473776 1F  120.0(36.3평) 2,000/65 다율동 991-3 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -508,6 +662,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2508941006 3F  82.89(25.1평) 1,000/40 가좌동 1090 -<br>2506482115 1F  18.13(5.5평) 1,000/65 가좌동 1090 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7293353, 126.7173998), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505003465 2F  101.57(30.7평) 2,000/100 다율동 987-2 987-2 센타프라자2 2층 202호호<br>2507827140 1F  50.39(15.2평) 2,000/120 다율동 987-2 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -822,6 +998,28 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7394698, 126.719938), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507691402 1F  337.35(102.0평) 10,000/500 다율동 526-6 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 3; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -992,6 +1190,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2505552598 3F  36.9(11.2평) 1,000/55 가좌동 1087 -<br>2508701607 3F  19.83(6.0평) 500/55 가좌동 1087 -<br>2507042520 2F  91.5(27.7평) 3,000/150 가좌동 1087 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 5; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7326342, 126.7209669), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509320719 2F  34.0(10.3평) 1,000/30 다율동 982 -<br>2505567047 1F  16.0(4.8평) 500/40 다율동 982 -<br>2509316270 2F  33.88(10.2평) 500/45 다율동 982 -<br>2506350251 5F  72.0(21.8평) 1,000/70 다율동 982 -<br>2509932864 1F  20.25(6.1평) 1,000/90 다율동 982 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -1306,6 +1526,28 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.734205, 126.724299), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505036004 1F  36.81(11.1평) 3,000/200 다율동 545-6 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 2; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -1344,6 +1586,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2509108676   0.0(0.0평) 3,000/190 가좌동 33-3 외2필지제가동호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 5; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.732665, 126.724699), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509470952 1F  36.81(11.1평) 2,000/160 다율동 666 -<br>2510125355 1F  36.81(11.1평) 3,000/170 다율동 666 -<br>2507076177 1F  36.0(10.9평) 3,000/180 다율동 666 -<br>2507080635 1F  43.88(13.3평) 3,000/190 다율동 666 -<br>2508143708 1F  80.69(24.4평) 5,000/350 다율동 666 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -1410,6 +1674,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2508493612 3F  264.0(79.9평) 3,000/250 가좌동 153-1 -<br>2509782586   0.0(0.0평) 6,000/350 가좌동 153-1 153-1 1동 3층<br>2509782509 3F  367.65(111.2평) 6,000/350 가좌동 153-1 153-1 1동 3층</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.737486, 126.726164), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2510182494 1F  36.81(11.1평) 2,000/160 다율동 247-15 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -1548,6 +1834,28 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6696771, 126.7287409), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2504778733 1F  22.72(6.9평) 1,000/55 대화동 1499 1499 상가동 제102호 일부<br>2504946568 1F  23.17(7.0평) 1,000/75 대화동 1499 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 9; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -1570,6 +1878,28 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.738209, 126.729357), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508686599 1F  35.7(10.8평) 3,000/180 다율동 1055 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 3; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -1586,6 +1916,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2506200121 1F  110.0(33.3평) 7,000/350 다율동 1041-8 -<br>2504839802 1F  110.0(33.3평) 7,000/400 다율동 1041-8 -<br>2509984413 1F  117.0(35.4평) 7,000/400 다율동 1041-8 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 14; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7336031, 126.7295493), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507052119 4F  36.3(11.0평) 2,000/80 다율동 1043-3 SD드림스퀘어 제4층 403호<br>2508575250 4F  77.35(23.4평) 2,000/80 다율동 1043-3 -<br>2506994741 3F  47.0(14.2평) 2,000/90 다율동 1043-3 SD드림스퀘어 제3층 305-1호<br>2508309731 3F  47.0(14.2평) 2,000/100 다율동 1043-3 305-1호<br>2508404981 1F  42.3(12.8평) 2,000/110 다율동 1043-3 -<br>2508923810 2F  42.66(12.9평) 2,000/110 다율동 1043-3 -<br>2509849545 2F  47.01(14.2평) 3,000/110 다율동 1043-3 -<br>2504888336 1F  20.3(6.1평) 2,000/120 다율동 1043-3 -<br>2505072215 7F  60.04(18.2평) 2,000/130 다율동 1043-3 -<br>2509888165 4F  77.35(23.4평) 2,000/140 다율동 1043-3 -<br>2505810042 1F  38.71(11.7평) 3,000/250 다율동 1043-3 -<br>2507408162 1F  39.9(12.1평) 3,000/280 다율동 1043-3 SD드림스퀘어 1층111호<br>2507456027 7F  137.1(41.5평) 3,000/300 다율동 1043-3 SD 드림스퀘어7층704호<br>2507456595 1F  77.3(23.4평) 9,000/520 다율동 1043-3 SD드림스퀘어 1층105호 106호</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -1636,6 +1988,28 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.669434, 126.7298373), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2510016365 1F  36.15(10.9평) 1,000/50 대화동 1500-1 1500-1 2동 102호호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 11; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -1680,6 +2054,28 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 34; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7341278, 126.7305476), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2504982761 4F  57.76(17.5평) 3,000/110 다율동 1044 -<br>2507381819 4F  57.7(17.5평) 3,000/111 다율동 1044 -<br>2507331553 2F  47.61(14.4평) 3,000/115 다율동 1044 1044 211호호<br>2506787779 5F  69.16(20.9평) 3,000/120 다율동 1044 1044 502호호<br>2508482546 8F  68.35(20.7평) 2,000/125 다율동 1044 1044 802호호<br>2508723019 4F  78.28(23.7평) 3,000/140 다율동 1044 -<br>2509082325 2F  57.75(17.5평) 4,000/146 다율동 1044 -<br>2506995298 5F  80.0(24.2평) 3,000/150 다율동 1044 -<br>2507331452 8F  97.28(29.4평) 3,000/150 다율동 1044 1044 807호호<br>2505787488 4F  78.28(23.7평) 3,000/155 다율동 1044 -<br>2506360657 3F  79.9(24.2평) 4,000/176 다율동 1044 태산w타워 3층301호<br>2506186913 1F  42.0(12.7평) 3,000/230 다율동 1044 -<br>2508508907 1F  36.1(10.9평) 5,000/230 다율동 1044 -<br>2506257146 1F  41.8(12.6평) 3,000/240 다율동 1044 -<br>2510007020 6F  137.0(41.4평) 6,000/241 다율동 1044 -<br>2506363745 4F  136.76(41.4평) 3,000/270 다율동 1044 -<br>2506199743 5F  147.99(44.8평) 6,000/271 다율동 1044 -<br>2505436187 3F  115.5(34.9평) 5,000/272 다율동 1044 -<br>2506173411 3F  147.96(44.8평) 6,000/272 다율동 1044 -<br>2508467073 1F  47.6(14.4평) 5,000/300 다율동 1044 -<br>2504888256 3F  136.9(41.4평) 6,000/310 다율동 1044 -<br>2510227903 3F  136.9(41.4평) 8,000/313 다율동 1044 태산W타워 3층 309호 310호<br>2506479141 3F  156.5(47.3평) 8,000/350 다율동 1044 305호, 306호<br>2509478725 2F  136.8(41.4평) 10,000/353 다율동 1044 태산w타워2층209호210호<br>2507417530 2F  149.28(45.2평) 10,000/377 다율동 1044 태산W타워 2층 201호 202호<br>2510227496 2F  146.6(44.3평) 10,000/378 다율동 1044 태산w타워 2층204호205호<br>2506993974 3F  130.0(39.3평) 11,000/490 다율동 1044 -<br>2509434642 2F  195.0(59.0평) 14,000/500 다율동 1044 -<br>2508459831 3F  272.0(82.3평) 14,000/622 다율동 1044 -<br>2510135031 3F  330.79(100.1평) 18,000/738 다율동 1044 -<br>2507055309 2F  282.7(85.5평) 19,000/784 다율동 1044 204호~207호<br>2506209474 3F  409.06(123.7평) 22,000/914 다율동 1044 -<br>2507600835 3F  409.0(123.7평) 22,000/935 다율동 1044 태산w타워3층305호306호307호308호309호310호<br>2506208211 2F  477.46(144.4평) 33,000/1,321 다율동 1044 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 10; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -1696,6 +2092,138 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2508462799 2F  42.0(12.7평) 2,000/150 다율동 1037-7 -<br>2505878015 2F  50.16(15.2평) 3,000/200 다율동 1037-7 1037-7 207호호<br>2506166283 2F  42.0(12.7평) 3,000/200 다율동 1037-7 1037-7 202호호<br>2505878300 2F  64.98(19.7평) 3,000/220 다율동 1037-7 1037-7 203호호<br>2505878559 1F  37.0(11.2평) 4,000/290 다율동 1037-7 1037-7 101호호<br>2506378329 1F  40.0(12.1평) 4,000/320 다율동 1037-7 -<br>2505878169 4F  40.0(12.1평) 4,000/320 다율동 1037-7 1037-7 102호호<br>2508301586 1F  43.31(13.1평) 5,000/450 다율동 1037-7 -<br>2505445207 4F  174.4(52.8평) 7,000/450 다율동 1037-7 403~405<br>2507256966 1F  76.99(23.3평) 8,000/610 다율동 1037-7 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 38; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7337741, 126.7307866), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508921550 7F  14.51(4.4평) 2,000/110 다율동 1044-1 1044-1 707호호<br>2507033873 9F  47.96(14.5평) 2,000/110 다율동 1044-1 -<br>2509604854 7F  47.88(14.5평) 2,000/125 다율동 1044-1 운정3지구 F3-1-2<br>2509444212 9F  51.84(15.7평) 3,000/130 다율동 1044-1 -<br>2509927962 3F  59.13(17.9평) 3,000/205 다율동 1044-1 -<br>2506648881 8F  97.0(29.3평) 4,000/225 다율동 1044-1 월드타워18 8층 808호 809호<br>2509604015 2F  19.3(5.8평) 5,000/230 다율동 1044-1 1044-1 204호호<br>2506661196 8F  100.5(30.4평) 4,000/245 다율동 1044-1 월드타워18 8층 810호 811호<br>2510076025 7F  97.6(29.5평) 5,000/250 다율동 1044-1 월드타워18 7층 702호 703호<br>2507612989 8F  97.6(29.5평) 5,000/250 다율동 1044-1 월드타워18 8층 802호803호<br>2507053269 10F  102.0(30.9평) 5,000/300 다율동 1044-1 -<br>2509604347 5F  31.39(9.5평) 5,000/300 다율동 1044-1 1044-1 501호호<br>2509855869 2F  97.0(29.3평) 6,000/330 다율동 1044-1 월드타워18 2층 207호 208호<br>2510076728 7F  123.0(37.2평) 6,000/330 다율동 1044-1 월드타워18 7층 704호705호<br>2506952680 3F  103.7(31.4평) 6,000/340 다율동 1044-1 월드타워18 3층 301호<br>2509604091 2F  19.3(5.8평) 7,000/350 다율동 1044-1 1044-1 301호호<br>2508956362 1F  13.42(4.1평) 10,000/380 다율동 1044-1 1044-1 102호호<br>2509927330 10F  149.45(45.2평) 7,000/400 다율동 1044-1 -<br>2507056219 4F  145.4(44.0평) 9,000/400 다율동 1044-1 운정3지구 f3-1-2 407호~409호<br>2506577033 1F  52.43(15.9평) 10,000/420 다율동 1044-1 -<br>2508152520 10F  149.4(45.2평) 8,000/430 다율동 1044-1 월드타워18 10층 1001호 1002호<br>2509603896 1F  15.86(4.8평) 10,000/450 다율동 1044-1 1044-1 116호호<br>2508958573 2F  37.94(11.5평) 10,000/470 다율동 1044-1 1044-1 212호호<br>2508771264 1F  16.61(5.0평) 14,000/500 다율동 1044-1 1044-1 110호호<br>2509526938 10F  174.9(52.9평) 10,000/520 다율동 1044-1 월드타워18 10층 1003호 1004호 1005호<br>2508960330 7F  57.52(17.4평) 10,000/520 다율동 1044-1 1044-1 706호호<br>2507034519 5F  201.65(61.0평) 10,000/580 다율동 1044-1 -<br>2508922178 5F  201.6(61.0평) 11,000/580 다율동 1044-1 운정3지구 F3-1-2 501,502호<br>2509604240 4F  57.52(17.4평) 10,000/640 다율동 1044-1 1044-1 406호호<br>2508973183 10F  245.6(74.3평) 11,000/650 다율동 1044-1 월드타워18 10층 1007호1008호1009호1010호1011호<br>2509526404 9F  253.9(76.8평) 17,000/780 다율동 1044-1 월드타워18 9층 905호 906호<br>2509930131 4F  301.38(91.2평) 18,500/940 다율동 1044-1 -<br>2507282630 7F  402.0(121.6평) 21,000/1,000 다율동 1044-1 -<br>2505343990 7F  34.0(10.3평) 24,000/1,100 다율동 1044-1 -<br>2507699091 7F  347.0(105.0평) 24,000/1,100 다율동 1044-1 -<br>2507408730 2F  301.9(91.3평) 22,000/1,110 다율동 1044-1 월드타워18 2층 204호 205호 206호<br>2507972643 3F  363.0(109.8평) 26,000/1,300 다율동 1044-1 -<br>2510076299 4F  499.6(151.1평) 31,500/1,550 다율동 1044-1 월드타워18 4층 405호~410호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 40; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7343725, 126.7310892), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506990701 4F  55.08(16.7평) 2,000/110 다율동 1045 -<br>2507018348 4F  59.74(18.1평) 2,000/120 다율동 1045 -<br>2507017616 4F  66.12(20.0평) 2,000/130 다율동 1045 -<br>2507009716 4F  69.6(21.1평) 2,000/140 다율동 1045 -<br>2506992603 4F  69.6(21.1평) 2,000/150 다율동 1045 -<br>2506200998 2F  55.08(16.7평) 3,000/160 다율동 1045 -<br>2509939925 1F  35.7(10.8평) 3,000/170 다율동 1045 1045-1 126호호<br>2507016106 4F  81.2(24.6평) 2,000/170 다율동 1045 -<br>2506989437 4F  102.0(30.9평) 2,000/190 다율동 1045 -<br>2510121383 1F  35.7(10.8평) 3,000/200 다율동 1045 1045-1 125호호<br>2506200131 2F  69.6(21.1평) 3,000/200 다율동 1045 -<br>2506205629 2F  59.74(18.1평) 1,600/210 다율동 1045 -<br>2506991622 4F  109.28(33.1평) 2,000/210 다율동 1045 -<br>2506208947 2F  66.12(20.0평) 4,000/220 다율동 1045 -<br>2507019825 4F  88.16(26.7평) 2,000/220 다율동 1045 -<br>2506035322 1F  35.7(10.8평) 3,000/230 다율동 1045 126호<br>2506206339 2F  69.6(21.1평) 2,000/230 다율동 1045 -<br>2506209985 2F  66.12(20.0평) 4,000/230 다율동 1045 -<br>2505439780 1F  35.7(10.8평) 3,000/240 다율동 1045 -<br>2504869772 1F  35.7(10.8평) 4,000/240 다율동 1045 1045-1 124호<br>2506204147 2F  88.16(26.7평) 3,000/250 다율동 1045 -<br>2505443913 1F  66.97(20.3평) 3,000/280 다율동 1045 -<br>2505442260 1F  46.4(14.0평) 3,000/280 다율동 1045 -<br>2510076596 3F  124.16(37.6평) 2,400/290 다율동 1045 다율타워 315호<br>2505443098 1F  66.97(20.3평) 3,000/300 다율동 1045 -<br>2506197681 2F  102.0(30.9평) 3,000/300 다율동 1045 -<br>2505441361 1F  46.4(14.0평) 4,000/360 다율동 1045 -<br>2506193831 2F  211.45(64.0평) 4,000/360 다율동 1045 -<br>2506994670 4F  211.45(64.0평) 4,000/370 다율동 1045 -<br>2505480209 1F  77.0(23.3평) 3,000/380 다율동 1045 -<br>2505435912 1F  66.84(20.2평) 3,000/380 다율동 1045 -<br>2505433634 1F  71.2(21.5평) 3,000/400 다율동 1045 -<br>2505471284 1F  66.88(20.2평) 3,000/400 다율동 1045 -<br>2506207333 2F  124.16(37.6평) 4,000/400 다율동 1045 -<br>2505464981 1F  66.88(20.2평) 3,000/440 다율동 1045 -<br>2505464271 1F  83.08(25.1평) 4,000/500 다율동 1045 -<br>2506194946 2F  211.45(64.0평) 4,000/500 다율동 1045 -<br>2506202005 3F  81.2(24.6평) 5,000/560 다율동 1045 -<br>2505480848 1F  101.0(30.6평) 5,000/660 다율동 1045 -<br>2505432535 1F  155.0(46.9평) 8,000/930 다율동 1045 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 12; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7338794, 126.7311723), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2504966527 6F  87.37(26.4평) 2,000/120 다율동 1044-2 -<br>2506217807 6F  98.28(29.7평) 3,000/160 다율동 1044-2 1044-2 601호<br>2508923703 1F  56.16(17.0평) 3,000/200 다율동 1044-2 -<br>2505425462 1F  87.0(26.3평) 3,000/230 다율동 1044-2 -<br>2509480531 1F  49.1(14.9평) 3,000/250 다율동 1044-2 101호<br>2509367330 2F  98.28(29.7평) 3,000/250 다율동 1044-2 -<br>2509366542 1F  49.14(14.9평) 3,000/260 다율동 1044-2 -<br>2509133175 1F  49.0(14.8평) 3,000/270 다율동 1044-2 -<br>2504869412 1F  87.0(26.3평) 3,000/280 다율동 1044-2 1044-2 107호호<br>2507912115 2F  159.8(48.3평) 4,000/390 다율동 1044-2 네스트원 제2층 제201호~202호<br>2508980797 2F  159.8(48.3평) 5,000/400 다율동 1044-2 네스트원 2층 201호 202호<br>2507009630 1F  97.86(29.6평) 6,000/520 다율동 1044-2 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 53; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7340204, 126.7314644), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2504888143 5F  70.0(21.2평) 2,000/100 다율동 1044-3 -<br>2508810164 5F  69.72(21.1평) 2,500/100 다율동 1044-3 1044-3 513호호<br>2509480952 5F  88.1(26.7평) 2,000/100 다율동 1044-3 513호<br>2507457321 6F  69.4(21.0평) 2,000/100 다율동 1044-3 공감빌딩6층613호<br>2507141948 4F  69.7(21.1평) 2,000/110 다율동 1044-3 공감빌딩 제4층 제412호<br>2508485165 5F  79.52(24.1평) 2,500/110 다율동 1044-3 1044-3 506호호<br>2508259677 5F  69.71(21.1평) 2,000/110 다율동 1044-3 -<br>2509492917 5F  82.32(24.9평) 2,000/110 다율동 1044-3 -<br>2506241596 6F  69.7(21.1평) 2,000/110 다율동 1044-3 -<br>2508459136 4F  70.0(21.2평) 2,000/120 다율동 1044-3 -<br>2505012542 6F  80.4(24.3평) 3,000/120 다율동 1044-3 -<br>2505730491 8F  69.72(21.1평) 2,000/120 다율동 1044-3 412호<br>2509880088 4F  71.4(21.6평) 2,000/130 다율동 1044-3 -<br>2507616733 5F  76.51(23.1평) 3,000/140 다율동 1044-3 -<br>2508224280 5F  85.9(26.0평) 2,000/140 다율동 1044-3 514호<br>2508445907 4F  93.0(28.1평) 3,000/150 다율동 1044-3 -<br>2507350017 4F  100.2(30.3평) 3,000/160 다율동 1044-3 공감빌딩 제4층 제406호<br>2509227932 2F  71.4(21.6평) 3,000/170 다율동 1044-3 -<br>2508469895 2F  83.0(25.1평) 2,500/170 다율동 1044-3 -<br>2506998231 4F  100.0(30.2평) 3,000/170 다율동 1044-3 -<br>2506484773 2F  82.0(24.8평) 2,000/175 다율동 1044-3 -<br>2510072782 2F  83.7(25.3평) 2,000/180 다율동 1044-3 공감빌딩2층 201호<br>2508461384 5F  122.0(36.9평) 2,500/200 다율동 1044-3 -<br>2505665305 1F  44.57(13.5평) 3,000/240 다율동 1044-3 1044-3 124호호<br>2508828086 1F  40.1(12.1평) 4,000/240 다율동 1044-3 공감빌딩1층103호<br>2509470464 1F  50.15(15.2평) 5,000/250 다율동 1044-3 1044-3 111호호<br>2509879123 4F  141.0(42.7평) 3,000/250 다율동 1044-3 -<br>2508463555 4F  140.0(42.4평) 3,000/250 다율동 1044-3 -<br>2507768446 5F  157.64(47.7평) 3,000/250 다율동 1044-3 -<br>2504887198 5F  160.0(48.4평) 4,000/250 다율동 1044-3 -<br>2507875225 1F  40.18(12.2평) 3,000/260 다율동 1044-3 1044-3 104호호<br>2506633948 1F  40.18(12.2평) 5,000/260 다율동 1044-3 -<br>2509636199 1F  40.67(12.3평) 4,000/260 다율동 1044-3 -<br>2506276072 1F  43.07(13.0평) 3,000/270 다율동 1044-3 -<br>2507519154 2F  141.0(42.7평) 5,000/290 다율동 1044-3 공감빌딩 제2층 제209호~210호<br>2509205756 1F  55.87(16.9평) 5,000/295 다율동 1044-3 -<br>2508817569 1F  55.8(16.9평) 5,000/300 다율동 1044-3 공감빌딩1층108호<br>2505662836 1F  55.8(16.9평) 5,000/320 다율동 1044-3 1층 108호<br>2505942507 4F  205.79(62.3평) 5,000/330 다율동 1044-3 -<br>2510440074 1F  66.3(20.1평) 4,000/340 다율동 1044-3 -<br>2506460298 1F  35.7(10.8평) 4,000/340 다율동 1044-3 -<br>2507350400 2F  165.7(50.1평) 4,000/340 다율동 1044-3 공감빌딩 제2층 제201호~202호<br>2508102307 2F  165.78(50.1평) 4,000/350 다율동 1044-3 -<br>2508818535 2F  141.0(42.7평) 6,000/400 다율동 1044-3 공감빌딩 2층 209호210호<br>2504888412 2F  140.0(42.4평) 6,000/400 다율동 1044-3 -<br>2508816605 3F  190.9(57.7평) 6,000/470 다율동 1044-3 공감빌딩3층308호309호<br>2506476993 1F  89.2(27.0평) 6,000/480 다율동 1044-3 124호<br>2510372332 7F  331.8(100.4평) 10,000/500 다율동 1044-3 -<br>2507997355 1F  80.8(24.4평) 6,000/520 다율동 1044-3 1층 104<br>2504991063 7F  331.8(100.4평) 10,000/520 다율동 1044-3 701호,702호,703호,704호<br>2506262598 1F  43.07(13.0평) 6,000/540 다율동 1044-3 -<br>2508815846 3F  227.6(68.8평) 9,000/560 다율동 1044-3 공감빌딩 3층 312호, 313호, 314호<br>2506161590 2F  262.51(79.4평) 10,000/650 다율동 1044-3 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 20; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.734729, 126.7318695), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507444162 6F  59.7(18.1평) 2,000/100 다율동 1045-2 월드타워19.6층602호<br>2508810711 5F  69.6(21.1평) 2,000/130 다율동 1045-2 1045-2 504호호<br>2508438071 5F  69.6(21.1평) 2,000/135 다율동 1045-2 -<br>2508425237 3F  59.7(18.1평) 2,000/140 다율동 1045-2 3층 302호<br>2506007153 4F  23.02(7.0평) 2,000/150 다율동 1045-2 -<br>2509481538 4F  76.1(23.0평) 2,000/150 다율동 1045-2 401<br>2505245171 3F  68.5(20.7평) 2,000/165 다율동 1045-2 -<br>2509471189 7F  126.0(38.1평) 3,000/250 다율동 1045-2 1045-2 505호호<br>2508923008 1F  37.6(11.4평) 5,000/260 다율동 1045-2 103호<br>2507331304 1F  38.0(11.5평) 5,000/270 다율동 1045-2 1045-2 103호호<br>2506378552 1F  38.02(11.5평) 5,000/280 다율동 1045-2 -<br>2507331649 5F  144.0(43.6평) 3,000/300 다율동 1045-2 1045-2 503호호<br>2508426720 5F  144.0(43.6평) 4,000/310 다율동 1045-2 -<br>2506378116 1F  52.0(15.7평) 6,000/390 다율동 1045-2 -<br>2506377050 1F  144.0(43.6평) 7,000/440 다율동 1045-2 -<br>2508832889 1F  77.7(23.5평) 10,000/520 다율동 1045-2 월드타워19 1층 101호, 102호<br>2508465140 1F  104.0(31.5평) 14,000/525 다율동 1045-2 -<br>2507454587 3F  279.8(84.6평) 10,000/715 다율동 1045-2 월드타워19차 3층 301호, 302호, 303호<br>2508729401 1F  104.0(31.5평) 14,000/740 다율동 1045-2 -<br>2507882760 1F  103.99(31.5평) 10,000/770 다율동 1045-2 1045-2 108호 109호호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 32; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7343392, 126.7321528), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507496439 6F  88.0(26.6평) 3,000/100 다율동 1044-5 -<br>2509450358 5F  80.0(24.2평) 2,000/120 다율동 1044-5 -<br>2506209254 5F  79.5(24.0평) 2,500/130 다율동 1044-5 506호<br>2509125732 6F  87.98(26.6평) 3,000/130 다율동 1044-5 -<br>2507495835 6F  93.5(28.3평) 3,000/140 다율동 1044-5 -<br>2510127080 6F  87.98(26.6평) 3,000/140 다율동 1044-5 -<br>2508160698 5F  102.2(30.9평) 2,500/155 다율동 1044-5 502호<br>2506250138 2F  63.8(19.3평) 3,000/160 다율동 1044-5 채움빌딩 2층 207호<br>2507343347 2F  63.84(19.3평) 2,000/160 다율동 1044-5 -<br>2509447803 5F  88.0(26.6평) 3,000/160 다율동 1044-5 1044-5 502호호<br>2508484180 6F  89.98(27.2평) 3,000/200 다율동 1044-5 1044-5 604호호<br>2506065006 5F  159.0(48.1평) 4,000/240 다율동 1044-5 채움빌딩 제5층 제505호~506호<br>2506468773 5F  92.8(28.1평) 5,000/250 다율동 1044-5 504호<br>2507496769 6F  173.0(52.3평) 5,000/250 다율동 1044-5 -<br>2508600585 6F  173.0(52.3평) 6,000/250 다율동 1044-5 -<br>2505427061 7F  93.5(28.3평) 5,000/250 다율동 1044-5 -<br>2504981598 7F  116.2(35.2평) 5,000/250 다율동 1044-5 704호<br>2508161105 5F  79.5(24.0평) 5,000/260 다율동 1044-5 506호,505호<br>2509691425 6F  173.0(52.3평) 5,000/260 다율동 1044-5 채움빌딩 제6층 제605호~606호<br>2505662673 6F  173.04(52.3평) 6,000/260 다율동 1044-5 606호<br>2506763356 7F  116.3(35.2평) 3,000/260 다율동 1044-5 -<br>2507285761 1F  36.2(11.0평) 5,000/270 다율동 1044-5 111호<br>2509259916 2F  88.0(26.6평) 3,000/270 다율동 1044-5 -<br>2506591641 7F  116.3(35.2평) 5,000/270 다율동 1044-5 704호<br>2505040173 1F  36.31(11.0평) 5,000/300 다율동 1044-5 1044-5 111호호<br>2508216800 5F  190.2(57.5평) 5,000/380 다율동 1044-5 1044-5 502,503호<br>2506238664 6F  261.0(79.0평) 9,000/380 다율동 1044-5 -<br>2505661647 6F  261.02(79.0평) 9,000/400 다율동 1044-5 605<br>2507351170 6F  260.9(78.9평) 7,000/400 다율동 1044-5 채움빌딩 제6층 제604호~606호<br>2505394744 2F  180.97(54.7평) 6,000/540 다율동 1044-5 -<br>2510418763 1F  90.12(27.3평) 8,000/550 다율동 1044-5 -<br>2505590671 7F  399.0(120.7평) 12,000/750 다율동 1044-5 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -1724,6 +2252,72 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 7; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6695963, 126.7323368), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509900815 B1F  118.7(35.9평) 2,000/70 대화동 1464-7 1464-7 대륙종합상가 지하층 비102호호<br>2508173183 1F  67.31(20.4평) 1,000/80 대화동 1464-7 -<br>2506451296 1F  38.7(11.7평) 1,000/80 대화동 1464-7 -<br>2509785944 1F  38.7(11.7평) 1,000/85 대화동 1464-7 1464-7 대륙종합상가 제1층 제107호호<br>2506832832 1F  67.31(20.4평) 1,000/90 대화동 1464-7 -<br>2505898485 1F  58.4(17.7평) 2,000/110 대화동 1464-7 -<br>2505704157 B1F  342.98(103.8평) 3,000/150 대화동 1464-7 1464-7 대륙종합상가 제지하층 제비123호호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6672912, 126.732365), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509852389 1F  561.0(169.7평) 10,000/1,000 대화동 1442-7 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 4; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6704601, 126.7324184), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505965761 1F  34.3(10.4평) 1,000/60 대화동 1459-9 -<br>2505882365 1F  33.04(10.0평) 1,000/70 대화동 1459-9 -<br>2509572668 1F  59.03(17.9평) 1,000/110 대화동 1459-9 -<br>2506933846 2F  108.33(32.8평) 2,000/150 대화동 1459-9 1459-9 제2층 202호호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 1; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -1740,6 +2334,160 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2508332578 1F  30.1(9.1평) 3,000/120 다율동 1030 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6575037, 126.7326777), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508419481 1F  36.0(10.9평) 1,000/50 대화동 1926-119 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 15; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7351556, 126.7328158), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509900520 4F  59.8(18.1평) 3,000/120 다율동 1044-9 -<br>2509881546 4F  59.8(18.1평) 3,000/130 다율동 1044-9 -<br>2509909021 2F  54.63(16.5평) 3,000/150 다율동 1044-9 -<br>2508444313 3F  79.0(23.9평) 3,000/190 다율동 1044-9 -<br>2507236509 7F  119.6(36.2평) 4,000/200 다율동 1044-9 -<br>2507550554 5F  119.6(36.2평) 4,000/220 다율동 1044-9 -<br>2508073273 6F  143.9(43.5평) 4,000/220 다율동 1044-9 -<br>2508441648 3F  108.0(32.7평) 4,000/270 다율동 1044-9 -<br>2504887482 6F  144.0(43.6평) 6,000/280 다율동 1044-9 -<br>2505822837 2F  54.0(16.3평) 5,000/300 다율동 1044-9 -<br>2507043025 2F  109.2(33.0평) 5,000/300 다율동 1044-9 -<br>2508439817 6F  149.0(45.1평) 6,000/300 다율동 1044-9 -<br>2509205327 2F  109.0(33.0평) 5,000/320 다율동 1044-9 -<br>2506153619 1F  53.15(16.1평) 7,000/420 다율동 1044-9 -<br>2505890255 1F  60.99(18.4평) 10,000/530 다율동 1044-9 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 19; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7348228, 126.733031), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507638966 3F  72.34(21.9평) 2,000/130 다율동 1044-8 -<br>2505509495 4F  84.73(25.6평) 3,000/150 다율동 1044-8 1044-8 405호호<br>2507552178 4F  106.34(32.2평) 3,000/160 다율동 1044-8 상상메디컬프라자 4층402호<br>2508481949 4F  85.47(25.9평) 3,000/170 다율동 1044-8 1044-8 409호호<br>2507379807 3F  85.4(25.8평) 3,000/180 다율동 1044-8 -<br>2507557390 3F  85.4(25.8평) 3,000/200 다율동 1044-8 상상메디컬3층309호<br>2506583512 3F  72.34(21.9평) 4,000/200 다율동 1044-8 -<br>2507049364 3F  106.3(32.2평) 3,000/210 다율동 1044-8 -<br>2509470710 8F  131.43(39.8평) 3,000/240 다율동 1044-8 1044-8 802호호<br>2509974169 1F  44.0(13.3평) 4,000/250 다율동 1044-8 -<br>2508809949 1F  42.36(12.8평) 3,000/250 다율동 1044-8 1044-8 113호호<br>2507001372 3F  98.17(29.7평) 3,000/250 다율동 1044-8 -<br>2508787790 10F  147.54(44.6평) 4,000/260 다율동 1044-8 1002호<br>2507561456 3F  98.1(29.7평) 3,000/260 다율동 1044-8 상상메디컬3층307호<br>2507994897 1F  42.36(12.8평) 3,000/290 다율동 1044-8 -<br>2505790049 1F  51.3(15.5평) 5,000/300 다율동 1044-8 -<br>2505498449 1F  42.36(12.8평) 5,000/340 다율동 1044-8 -<br>2507547679 2F  183.6(55.5평) 7,000/500 다율동 1044-8 상상메디컬 2층 208호.209호<br>2506196662 3F  179.0(54.1평) 5,000/600 다율동 1044-8 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.734558, 126.733124), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506991818 1F  42.36(12.8평) 3,000/290 다율동 산 61-9 파주운정3지구 F3-1-9L</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6579477, 126.7331664), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508417267 2F  83.0(25.1평) 1,000/70 대화동 1926-36 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 3; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6691639, 126.733264), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509902642 1F  37.8(11.4평) 1,000/50 대화동 1446-2 1446-2 현대플라자 102호호<br>2509786737 1F  37.8(11.4평) 1,000/70 대화동 1446-2 1446-2 외3필지 현대플라자 제1층 제105호호<br>2505925355 2F  113.4(34.3평) 1,000/100 대화동 1446-2 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 3; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6696452, 126.7341383), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507629638 1F  48.96(14.8평) 10,000/70 대화동 1450-1 1450-1 외8필지 자유로프라자 제1층 제109호호<br>2509332453 1F  51.48(15.6평) 2,000/100 대화동 1450-1 -<br>2505689724 1F  48.96(14.8평) 2,000/100 대화동 1450-1 1450-1 자유로프라자111호호</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -1900,6 +2648,28 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7367427, 126.7382339), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508972825 1F  331.2(100.2평) 5,000/400 다율동 851-6 -<br>2504925285 1F  330.0(99.8평) 5,000/400 다율동 851-6 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 1; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -1938,6 +2708,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2504933557 1F  99.01(30.0평) 1,000/90 검산동 431 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6851177, 126.7415741), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506218079 1F  160.72(48.6평) 5,000/400 대화동 137-2 주건축물제1동 1층 우측 일부</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -2171,6 +2963,28 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7341613, 126.7472583), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505014381 1F  540.7(163.6평) 10,000/900 당하동 270-14 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.7493834, 126.7473498), 
                 map: map,
                 image: markerImage
@@ -2237,6 +3051,160 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7357796, 126.7485672), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505543270 1F  126.4(38.2평) 2,000/150 당하동 263 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7401414, 126.7491217), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506159094 2F  66.11(20.0평) 1,000/60 당하동 230-3 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 4; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7463887, 126.7500531), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505569802 2F  115.7(35.0평) 2,000/100 당하동 197-5 -<br>2505984204 2F  130.54(39.5평) 2,000/100 당하동 197-5 197-5 2층 전부호<br>2510040025 1F  126.0(38.1평) 2,000/130 당하동 197-5 -<br>2505984670 1F  130.54(39.5평) 2,000/150 당하동 197-5 197-5 1층 전부호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7465398, 126.7515657), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2510062483 1F  49.8(15.1평) 1,000/100 당하동 171-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6842135, 126.7529592), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506215780 1F  23.37(7.1평) 500/50 대화동 2054-7 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.683568, 126.7533989), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509538816 B1F  93.0(28.1평) 400/35 대화동 2052-2 B01</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6828979, 126.7535189), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508495345 1F  115.12(34.8평) 2,000/150 대화동 2045-2 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.8387885, 126.7539164), 
                 map: map,
                 image: markerImage
@@ -2246,6 +3214,314 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2505324500 1F  197.7(59.8평) 1,000/90 내포리 743-10 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6830976, 126.7540162), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506488145 B1F  100.0(30.2평) 500/40 대화동 2045-15 B01</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6845003, 126.7545549), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507281424 B1F  148.0(44.8평) 500/35 대화동 2070-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6831792, 126.7548965), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509510815 B1F  149.65(45.3평) 1,000/80 대화동 2046 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.683801, 126.7552615), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507131428 1F  46.51(14.1평) 1,000/50 대화동 2050-11 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6851128, 126.7554359), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505068666 1F  50.0(15.1평) 1,500/80 대화동 2072-10 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.683018, 126.7558128), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2510049021 B1F  154.01(46.6평) 3,000/150 대화동 2033 -<br>2507036519 B1F  827.57(250.3평) 20,000/900 대화동 2033 2033 B101호호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 3; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6829614, 126.756392), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507702289 3F  120.0(36.3평) 3,000/180 대화동 2030 2030 3층 일부 302호호<br>2507145793 3F  390.22(118.0평) 5,000/430 대화동 2030 2030 3층호<br>2508056400 2F  363.64(110.0평) 7,000/450 대화동 2030 2층 일부분</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 28; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6660738, 126.7564915), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508057196 1F  36.26(11.0평) 1,000/60 대화동 1050-185 -<br>2508388294 2F  31.29(9.5평) 1,000/60 대화동 1050-185 -<br>2508054969 2F  51.6(15.6평) 1,000/60 대화동 1050-185 -<br>2507962265 1F  41.76(12.6평) 1,000/70 대화동 1050-185 -<br>2509920818 2F  19.4(5.9평) 1,000/70 대화동 1050-185 -<br>2507146389 2F  27.92(8.4평) 1,000/70 대화동 1050-185 -<br>2508722179 1F  45.36(13.7평) 1,000/80 대화동 1050-185 -<br>2508060614 1F  39.3(11.9평) 1,500/80 대화동 1050-185 -<br>2508429494 1F  36.25(11.0평) 1,000/90 대화동 1050-185 -<br>2508059656 1F  48.92(14.8평) 1,000/90 대화동 1050-185 -<br>2508062066 2F  50.24(15.2평) 2,000/90 대화동 1050-185 -<br>2510398018 1F  40.91(12.4평) 1,500/100 대화동 1050-185 -<br>2508387472 2F  47.31(14.3평) 1,000/100 대화동 1050-185 -<br>2508052507 2F  45.97(13.9평) 2,000/120 대화동 1050-185 -<br>2509985366 2F  51.0(15.4평) 2,000/120 대화동 1050-185 -<br>2508061105 1F  55.28(16.7평) 2,000/130 대화동 1050-185 -<br>2508067869 1F  50.21(15.2평) 2,000/150 대화동 1050-185 -<br>2508429978 2F  59.33(17.9평) 3,000/160 대화동 1050-185 -<br>2510304380 1F  55.28(16.7평) 3,000/170 대화동 1050-185 -<br>2507707635 3F  124.07(37.5평) 3,000/230 대화동 1050-185 -<br>2508062541 2F  59.33(17.9평) 4,000/280 대화동 1050-185 -<br>2506833103 3F  161.81(48.9평) 3,000/290 대화동 1050-185 -<br>2509789454 1F  49.82(15.1평) 4,000/300 대화동 1050-185 -<br>2508066544 3F  161.81(48.9평) 3,000/300 대화동 1050-185 -<br>2509270849 2F  139.0(42.0평) 4,000/360 대화동 1050-185 -<br>2507165410 2F  127.0(38.4평) 5,000/520 대화동 1050-185 -<br>2508068350 3F  124.16(37.6평) 6,000/600 대화동 1050-185 -<br>2509133447 3F  285.5(86.4평) 6,000/600 대화동 1050-185 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6833954, 126.756534), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506088094 1F  72.0(21.8평) 1,500/150 대화동 2028 2028 1층 일부호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.68291, 126.756605), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507705514 4F  100.0(30.2평) 2,000/110 대화동 2030-1 2030-1 4층 일부호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6841888, 126.7566597), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2510076810 1F  134.55(40.7평) 1,500/150 대화동 2020-1 2020-1 1층호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6843681, 126.7566928), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506409290 1F  28.0(8.5평) 500/45 대화동 2020-2 2020-2 1층 일부호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6828624, 126.7567649), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509864958 4F  247.65(74.9평) 3,000/180 대화동 2030-2 2030-2 4층호<br>2507184678 2F  247.65(74.9평) 3,000/200 대화동 2030-2 2030-2 2층호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6831052, 126.756947), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509000333 1F  48.46(14.7평) 1,000/80 대화동 2028-11 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -2274,6 +3550,116 @@
             isOpenStates.push(isOpen);
             initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
         
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6827963, 126.7581088), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508673206 B1F  25.0(7.6평) 200/30 대화동 2027-3 2027-3 지하층 일부호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6827928, 126.7591058), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506387957 1F  25.0(7.6평) 500/50 대화동 2025-9 -<br>2505030323 1F  32.0(9.7평) 500/50 대화동 2025-9 2025-9 1층 일부호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6831769, 126.7593733), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508250307 B1F  145.0(43.9평) 1,000/70 대화동 2013-4 2013-4 지하층호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6836063, 126.7595151), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506605418   0.0(0.0평) 500/40 대화동 2012-2 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.68409, 126.7599938), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2510196185 1F  63.91(19.3평) 1,000/80 대화동 2004-6 2004-6 1층호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
             var line_count = 2; 
             var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
             var markerImage = isOpen ? markerImageOne : markerImageMany;
@@ -2290,6 +3676,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2507196983 2F  110.58(33.5평) 3,000/130 금촌동 986-1 -<br>2510225631 1F  61.83(18.7평) 5,000/300 금촌동 986-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8657297, 126.76605), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507080091   0.0(0.0평) 5,000/100 당동리 123 -<br>2510097128   0.0(0.0평) 2,000/120 당동리 123 1층</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -3491,6 +4899,72 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8624631, 126.7734973), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508445042 1F  22.0(6.7평) 500/40 당동리 913-3 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8623746, 126.7736435), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507792674 1F  164.45(49.7평) 2,000/130 당동리 913-4 -<br>2507753452 1F  164.45(49.7평) 1,000/150 당동리 913-4 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8633261, 126.773657), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506255278 1F  265.17(80.2평) 10,000/450 당동리 167-2 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.7705317, 126.7737316), 
                 map: map,
                 image: markerImage
@@ -3544,6 +5018,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2508439455 1F  44.08(13.3평) 1,000/80 금촌동 59-19 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8656022, 126.7738526), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507902968 1F  25.2(7.6평) 1,000/70 당동리 947 근린생활2동2103-1<br>2504838541 1F  36.44(11.0평) 1,000/110 당동리 947 제근린생활시설-1동1층1102-1</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -3667,6 +5163,50 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8622541, 126.77436), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508334632 1F  80.0(24.2평) 1,000/70 당동리 914-5 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8631656, 126.7743904), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505942218 1F  46.28(14.0평) 3,000/140 당동리 175-3 -<br>2505945606 1F  231.4(70.0평) 15,000/700 당동리 175-3 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.7602897, 126.7744412), 
                 map: map,
                 image: markerImage
@@ -3676,6 +5216,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2506469287 5F  112.71(34.1평) 1,000/80 금촌동 73-13 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8621611, 126.7745161), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509058161 1F  148.56(44.9평) 1,000/80 당동리 914-4 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -4921,6 +6483,28 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8642056, 126.7814862), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506154168 1F  21.78(6.6평) 500/50 당동리 904 -<br>2507432875 1F  119.88(36.3평) 5,000/320 당동리 904 경기도 파주시 문산읍 방촌로 1675-22, 103호~104호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.7552175, 126.7818172), 
                 map: map,
                 image: markerImage
@@ -4930,6 +6514,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2505071816 1F  80.0(24.2평) 3,000/180 금촌동 796-9 -<br>2505072853 2F  242.88(73.5평) 4,500/450 금촌동 796-9 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 4; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8648827, 126.7819417), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505393098 1F  41.82(12.7평) 1,000/50 당동리 902 -<br>2509064225 1F  46.2(14.0평) 1,000/85 당동리 902 -<br>2506800629 1F  46.2(14.0평) 1,500/120 당동리 902 -<br>2509991796 1F  67.08(20.3평) 2,000/130 당동리 902 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -4987,6 +6593,204 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8654499, 126.782737), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506276098 1F  44.55(13.5평) 1,000/70 당동리 899-6 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8642375, 126.7832682), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508969241 2F  67.0(20.3평) 1,000/75 당동리 91-14 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8708286, 126.7836024), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505403069 1F  29.0(8.8평) 2,000/180 당동리 237 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8669794, 126.7836666), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508406264 1F  57.03(17.3평) 2,000/170 당동리 890-1 -<br>2505393806 4F  292.21(88.4평) 5,000/350 당동리 890-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8679956, 126.7839812), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506695538 1F  125.0(37.8평) 3,000/200 당동리 888-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 4; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8666601, 126.7841183), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505372371 1F  59.4(18.0평) 2,000/150 당동리 892 -<br>2506169229 1F  57.6(17.4평) 2,000/165 당동리 892 -<br>2508019816 1F  59.4(18.0평) 2,000/170 당동리 892 -<br>2505398884 1F  280.0(84.7평) 3,000/400 당동리 892 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8658861, 126.7842317), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506506762   0.0(0.0평) 25,000/1,500 당동리 899-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.866484, 126.7846074), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505360385 3F  68.17(20.6평) 2,000/120 당동리 888-8 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8667849, 126.7847461), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505373830 2F  139.92(42.3평) 3,000/180 당동리 888-7 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.7348585, 126.7849104), 
                 map: map,
                 image: markerImage
@@ -4996,6 +6800,72 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2505531743 1F  66.0(20.0평) 1,000/80 능안리 433-39 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8648273, 126.7850439), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508737996 2F  67.0(20.3평) 1,000/75 당동리 937 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8677986, 126.7850589), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505360767 1F  37.72(11.4평) 2,000/130 당동리 888-4 -<br>2507745294 1F  37.72(11.4평) 2,000/140 당동리 888-4 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8672519, 126.7857159), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505984891 1F  43.56(13.2평) 1,000/70 당동리 935 -<br>2507997330 1F  41.54(12.6평) 2,000/70 당동리 935 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -5040,6 +6910,138 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2507359541   0.0(0.0평) 10,000/700 내곡동 500-3 500-3 건물전체</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7415609, 126.8028939), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508503592 2F  27.0(8.2평) 500/30 대원리 992-8 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7339313, 126.8029266), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509616736 1F  137.19(41.5평) 3,000/150 대원리 678-24 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7344306, 126.8039433), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505371721 1F  63.0(19.1평) 1,000/80 대원리 642-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 3; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.634984, 126.8124584), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2504909858   345.0(104.4평) 10,000/450 대장동 381 -<br>2508118143 1F  347.1(105.0평) 10,000/450 대장동 381 -<br>2504909695 2F  350.0(105.9평) 10,000/450 대장동 381 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7277253, 126.8128042), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2509677051 1F  66.0(20.0평) 3,000/120 대원리 275-3 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7281826, 126.813451), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507400601 2F  189.86(57.4평) 3,000/170 대원리 227-2 2동 2층<br>2508608276 2F  189.86(57.4평) 2,000/180 대원리 227-2 227-2 2동</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -5106,6 +7108,28 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2506551480 2F  141.37(42.8평) 1,000/80 뇌조리 250 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7275136, 126.8185385), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505728062   342.0(103.5평) 4,000/300 대원리 216-1 외1필지</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
@@ -6021,6 +8045,138 @@
 
             // ✅ 마커 생성 후 배열에 저장
             var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8496532, 126.8702595), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2508398683 1F  34.14(10.3평) 500/50 대능리 95-62 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.8491763, 126.8725917), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506783753 1F  46.0(13.9평) 5,000/100 대능리 94-98 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7081253, 126.8752177), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507445245 1F  1188.0(359.4평) 10,000/1,000 대자동 824-9 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6808185, 126.8881828), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505936916   0.0(0.0평) 10,000/600 대자동 310-4 310-4 주건축물제1동<br>2505159514 1F  195.63(59.2평) 10,000/600 대자동 310-4 310-4 주건축물제1동</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 2; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.7115652, 126.8883333), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2505860103 2F  199.64(60.4평) 2,000/150 대자동 620-11 -<br>2507891268 1F  199.64(60.4평) 2,000/200 대자동 620-11 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 3; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6784699, 126.889017), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507161280   1600.0(484.0평) 15,000/900 대자동 275-1 -<br>2505332247   0.0(0.0평) 15,000/900 대자동 275-1 -<br>2504882484 1F  1655.0(500.6평) 15,000/900 대자동 275-1 -</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
                 position: new kakao.maps.LatLng(37.7036064, 126.895844), 
                 map: map,
                 image: markerImage
@@ -6074,6 +8230,50 @@
             // ✅ InfoWindow 생성 후 배열에 저장
             var infowindow = new kakao.maps.InfoWindow({
                 content: `<div class="${infoWindowClass}">2505800071 1F  90.36(27.3평) 1,000/50 고양동 109 109 1층일부호</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6887519, 126.900903), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2506199879 1F  99.99(30.2평) 5,000/350 대자동 65-1 65-1 전체</div>`, 
+                removable: false 
+            });
+            infoWindows.push(infowindow);
+            isOpenStates.push(isOpen);
+            initialOpenStates.push(isOpen);  // ✅ 초기 상태를 별도로 저장
+        
+            var line_count = 1; 
+            var isOpen = Boolean(line_count <= 1);  // ✅ 정확한 boolean 값 변환
+            var markerImage = isOpen ? markerImageOne : markerImageMany;
+            var infoWindowClass = isOpen ? "info-window-one" : "info-window-many"; // ✅ 클래스 설정
+
+            // ✅ 마커 생성 후 배열에 저장
+            var marker = new kakao.maps.Marker({ 
+                position: new kakao.maps.LatLng(37.6883714, 126.9010055), 
+                map: map,
+                image: markerImage
+            });
+            markers.push(marker);
+
+            // ✅ InfoWindow 생성 후 배열에 저장
+            var infowindow = new kakao.maps.InfoWindow({
+                content: `<div class="${infoWindowClass}">2507697011 1F  100.2(30.3평) 5,000/300 대자동 69-2 -</div>`, 
                 removable: false 
             });
             infoWindows.push(infowindow);
