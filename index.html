@@ -58856,7 +58856,7 @@
 
                         document.getElementById("closeAllInfoWindows").addEventListener("click", function() {
                             infoWindows.forEach((infoWindow, index) => {
-                                infoWindow.close();
+                                infoWindow.setMap(null); // ✅ close()보다 빠르게 삭제
                                 isOpenStates[index] = false;
                             });
                         });
