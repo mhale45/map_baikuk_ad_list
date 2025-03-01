@@ -58861,14 +58861,6 @@
                             });
                         });
 
-                        document.addEventListener("DOMContentLoaded", function() {
-                            // ✅ 지도 로드 시 모든 InfoWindow 닫기
-                            for (let i = 0; i < infoWindows.length; i++) {
-                                infoWindows[i].close();
-                                isOpenStates[i] = false; // ✅ 초기에 모든 창 닫힘 상태
-                            }
-                        });
-                        
                         document.getElementById("openInitialInfoWindows").addEventListener("click", function() {                            
                             lastCenter = map.getCenter();
                             lastLevel = map.getLevel();    
