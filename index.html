@@ -58862,31 +58862,22 @@
                         });
 
                         document.getElementById("openInitialInfoWindows").addEventListener("click", function() {                            
-                            lastCenter = map.getCenter();  // ✅ 현재 지도 중심 좌표 저장
-                            lastLevel = map.getLevel();    // ✅ 현재 확대 수준 저장
+                            lastCenter = map.getCenter();
+                            lastLevel = map.getLevel();    
 
-                            let index = 0;  // ✅ 인포윈도우를 하나씩 여는 인덱스
-
-                            function openNextInfoWindow() {
-                                if (index < infoWindows.length) {
-                                    if (initialOpenStates[index]) {  // ✅ 처음에 열려 있어야 하는 것만 열기
-                                        infoWindows[index].open(map, markers[index]);
-                                        isOpenStates[index] = true;
-                                    }
-                                    index++;
-                                    requestAnimationFrame(openNextInfoWindow);  // ✅ 다음 창을 자연스럽게 열기
+                            infoWindows.forEach((infoWindow, index) => {
+                                if (initialOpenStates[index]) {
+                                    infoWindow.open(map, markers[index]);
+                                    isOpenStates[index] = true;  
                                 }
-                            }
+                            });
 
-                            openNextInfoWindow();  // ✅ 첫 번째 InfoWindow 열기 시작
-
-                            // ✅ 지도 위치를 이전 상태로 복원 (이 부분은 지연 없이 즉시 실행)
                             if (lastCenter !== null && lastLevel !== null) {
                                 map.setCenter(lastCenter);
                                 map.setLevel(lastLevel);
                             }
                         });
-                        
+
                         document.getElementById("searchButton").addEventListener("click", searchInfoWindows);
                         document.getElementById("searchInput").addEventListener("keypress", function(event) {
                             if (event.key === "Enter") {
