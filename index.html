@@ -58862,16 +58862,20 @@
                         });
 
                         document.getElementById("openInitialInfoWindows").addEventListener("click", function() {                            
-                            lastCenter = map.getCenter();
-                            lastLevel = map.getLevel();    
+                            lastCenter = map.getCenter();  // ✅ 현재 지도 중심 좌표 저장
+                            lastLevel = map.getLevel();    // ✅ 현재 확대 수준 저장
 
                             infoWindows.forEach((infoWindow, index) => {
                                 if (initialOpenStates[index]) {
-                                    infoWindow.open(map, markers[index]);
-                                    isOpenStates[index] = true;  
+                                    const iwElement = infoWindow.a; // ✅ 카카오맵 InfoWindow의 DOM 요소 접근
+                                    if (iwElement) {
+                                        iwElement.style.display = "block"; // ✅ 기존에 생성된 InfoWindow를 즉시 표시
+                                    }
+                                    isOpenStates[index] = true;
                                 }
                             });
 
+                            // ✅ 지도 위치를 이전 상태로 복원
                             if (lastCenter !== null && lastLevel !== null) {
                                 map.setCenter(lastCenter);
                                 map.setLevel(lastLevel);
