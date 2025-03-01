@@ -58856,26 +58856,27 @@
 
                         document.getElementById("closeAllInfoWindows").addEventListener("click", function() {
                             infoWindows.forEach((infoWindow, index) => {
-                                infoWindow.setMap(null); // ✅ close()보다 빠르게 삭제
+                                infoWindow.close();
                                 isOpenStates[index] = false;
                             });
                         });
 
                         document.getElementById("openInitialInfoWindows").addEventListener("click", function() {                            
-                            lastCenter = map.getCenter();  // ✅ 현재 지도 중심 좌표 저장
-                            lastLevel = map.getLevel();    // ✅ 현재 확대 수준 저장
+                            lastCenter = map.getCenter();
+                            lastLevel = map.getLevel();    
 
-                            infoWindows.forEach((infoWindow, index) => {
-                                if (initialOpenStates[index]) {
-                                    const iwElement = infoWindow.a; // ✅ 카카오맵 InfoWindow의 DOM 요소 접근
-                                    if (iwElement) {
-                                        iwElement.style.display = "block"; // ✅ 기존에 생성된 InfoWindow를 즉시 표시
+                            let bounds = map.getBounds();  // ✅ 현재 지도의 범위를 가져옴
+
+                            for (let i = 0; i < markers.length; i++) {
+                                if (bounds.contain(markers[i].getPosition())) {  // ✅ 현재 지도 범위 안에 있는 마커인지 확인
+                                    if (initialOpenStates[i]) {
+                                        infoWindows[i].open(map, markers[i]);  // ✅ 현재 보이는 마커만 열기
+                                        isOpenStates[i] = true;  
                                     }
-                                    isOpenStates[index] = true;
                                 }
-                            });
+                            }
 
-                            // ✅ 지도 위치를 이전 상태로 복원
+                            // ✅ 지도 위치를 복원
                             if (lastCenter !== null && lastLevel !== null) {
                                 map.setCenter(lastCenter);
                                 map.setLevel(lastLevel);
