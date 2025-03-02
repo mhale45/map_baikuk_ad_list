@@ -1079,8 +1079,12 @@
                                 searchContainer.style.display = "none";
                             }
                         });
-                        
-                        document.querySelectorAll('div[style*="cursor: default;"]').forEach(el => el.remove());
+
+                        window.onload = function() {
+                            setTimeout(() => {
+                                document.querySelectorAll('div[style*="cursor: default;"]').forEach(el => el.remove());
+                            }, 1000); // 🔹 1초 후 실행 (지도가 로드된 후 적용되도록)
+                        };
 
                     });
                 } else {
