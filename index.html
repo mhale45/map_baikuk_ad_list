@@ -1080,11 +1080,13 @@
                             }
                         });
 
-                        window.onload = function() {
-                            setTimeout(() => {
-                                document.querySelectorAll('div[style*="cursor: default;"]').forEach(el => el.remove());
-                            }, 5000); // 🔹 1초 후 실행 (지도가 로드된 후 적용되도록)
-                        };
+                        const observer = new MutationObserver(() => {
+                            document.querySelectorAll('div[style*="cursor: default;"]').forEach(el => el.remove());
+                        });
+
+                        // 감시할 대상 설정 (body 내부 변경 감지)
+                        observer.observe(document.body, { childList: true, subtree: true });
+
 
                     });
                 } else {
