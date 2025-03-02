@@ -1079,6 +1079,8 @@
                                 searchContainer.style.display = "none";
                             }
                         });
+                        
+                        document.querySelectorAll('div[style*="cursor: default;"]').forEach(el => el.remove());
 
                     });
                 } else {
