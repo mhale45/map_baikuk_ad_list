@@ -27,6 +27,7 @@
                 box-border: none !important; /* ✅ 테두리 제거 */
                 box-border: none !important; /* ✅ 그림자 제거 */
                 box-shadow: none !important; /* ✅ 그림자 제거 */
+                box: none !important; /* ✅ 테두리 제거 */
             }
             .info-window-one::after, .info-window-one::before{
                 content: none !important; /* ✅ 삼각형을 완전히 제거 */
@@ -53,7 +54,7 @@
                 bottom: 12px; /* ✅ 오버레이 위치 조정 */
                 left: 50%;
                 transform: translateX(-50%);
-                background: rgba(255, 255, 255, 0.9);
+                background: rgba(255, 255, 255, 1);
                 border-radius: 5px;
                 font-size: 13px;
                 white-space: nowrap;
@@ -252,7 +253,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2508941006 3F  82.89(25.1평) 1,000/40<br>2506482115 1F  18.13(5.5평) 1,000/65 </div>`, 
                 removable: false 
             });
@@ -285,7 +286,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2508463019 1F  86.1(26.0평) 3,000/100 </div>`, 
                 removable: false 
             });
@@ -318,7 +319,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2508558700 1F  29.92(9.1평) 1,500/100 </div>`, 
                 removable: false 
             });
@@ -351,7 +352,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2508942512 1F  132.0(39.9평) 2,000/200 </div>`, 
                 removable: false 
             });
@@ -384,7 +385,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2505291458 1F  47.04(14.2평) 1,000/100<br>2507364339 1F  64.32(19.5평) 1,000/100<br>2508940566 1F  66.0(20.0평) 1,000/110<br>2508950967 1F  66.0(20.0평) 1,000/140 </div>`, 
                 removable: false 
             });
@@ -417,7 +418,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2510040318 1F  135.7(41.0평) 2,000/150 </div>`, 
                 removable: false 
             });
@@ -450,7 +451,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2510771464 B1F  39.67(12.0평) 300/37<br>2505281588 3F  36.9(11.2평) 1,000/55<br>2508701607 3F  19.83(6.0평) 500/55<br>2507042520 2F  91.5(27.7평) 3,000/150 </div>`, 
                 removable: false 
             });
@@ -483,7 +484,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2509578191 3F  137.66(41.6평) 1,500/140<br>2505923924 3F  137.66(41.6평) 1,500/150 (310-2 다민빌딩 일부) </div>`, 
                 removable: false 
             });
@@ -516,7 +517,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2505287562 2F  114.3(34.6평) 2,000/150<br>2508455960 1F  119.96(36.3평) 2,000/200<br>2505289145 1F  117.0(35.4평) 2,500/220 </div>`, 
                 removable: false 
             });
@@ -549,7 +550,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2509978783 1F  148.0(44.8평) 2,000/160 </div>`, 
                 removable: false 
             });
@@ -582,7 +583,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2506327082 2F  51.2(15.5평) 500/40 (362-1 제206호)<br>2507940901 B1F  128.4(38.8평) 400/45<br>2505351091 1F  42.4(12.8평) 1,000/75 (362-1 제 104호) </div>`, 
                 removable: false 
             });
@@ -615,7 +616,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2505159011 2F  60.16(18.2평) 1,000/50 (362-6 2층 일부)<br>2506465969 1F  66.3(20.1평) 2,000/110<br>2505989828 1F  66.3(20.1평) 1,000/120 (362-6 1층 일부) </div>`, 
                 removable: false 
             });
@@ -648,7 +649,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2505926423 B1F  56.25(17.0평) 500/45 (1086 가좌마을 제 상가동 제지1층 제비108호 일부)<br>2505678753 1F  26.62(8.1평) 1,000/70<br>2505810963 1F  26.0(7.9평) 2,000/70<br>2505985936 1F  26.63(8.1평) 2,500/80<br>2506996048 2F  53.25(16.1평) 1,000/80<br>2505646056 1F  26.6(8.0평) 1,500/90<br>2509139140 3F  72.72(22.0평) 1,300/105<br>2505292716 2F  199.71(60.4평) 2,000/230 </div>`, 
                 removable: false 
             });
@@ -681,7 +682,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2509957094 2F  132.2(40.0평) 2,000/150 (제1동 2층의 일부 203호204호) </div>`, 
                 removable: false 
             });
@@ -714,7 +715,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2509093845 1F  99.17(30.0평) 2,000/180<br>2505277842 2F  393.39(119.0평) 5,000/500 </div>`, 
                 removable: false 
             });
@@ -747,7 +748,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2506956930 B1F  198.35(60.0평) 1,000/80 </div>`, 
                 removable: false 
             });
@@ -780,7 +781,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2509108676   0.0(0.0평) 3,000/190 (외2필지제가동호) </div>`, 
                 removable: false 
             });
@@ -813,7 +814,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2509782586   0.0(0.0평) 6,000/350 (153-1 1동 3층)<br>2509782509 3F  367.65(111.2평) 6,000/350 (153-1 1동 3층) </div>`, 
                 removable: false 
             });
@@ -846,7 +847,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2510193028 2F  199.3(60.3평) 3,000/210 </div>`, 
                 removable: false 
             });
@@ -879,7 +880,7 @@
             markers.push(marker);
 
             // ✅ InfoWindow 생성 후 배열에 저장
-            var infowindow = new kakao.maps.InfoWindow({
+            var infowindow = new kakao.maps.CustomOverlay({
                 content: `<div class="${infoWindowClass}"> 2507891172 1F  72.2(21.8평) 1,000/55 </div>`, 
                 removable: false 
             });
