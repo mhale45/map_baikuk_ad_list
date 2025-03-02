@@ -110505,15 +110505,15 @@
                         document.addEventListener("click", function (event) {
                             // 클릭된 요소가 .custom-overlay 클래스인지 확인
                             if (event.target.classList.contains("custom-overlay")) {
-                                var textToCopy = event.target.textContent.trim();
+                                var searchQuery = event.target.textContent.trim(); // 클릭된 텍스트 값 가져오기
+                                var encodedQuery = encodeURIComponent(searchQuery); // URL 인코딩
 
-                                navigator.clipboard.writeText(textToCopy).then(() => {
-                                    showCopyMessage(event.target);
-                                }).catch(err => {
-                                    console.error("클립보드 복사 실패: ", err);
-                                });
+                                var searchURL = `https://map.naver.com/v5/search/${encodedQuery}`; // 네이버 지도 검색 URL 생성
+                                
+                                window.open(searchURL, "_blank"); // 새 창(또는 새 탭)에서 열기
                             }
                         });
+
 
                         // ✅ 복사 완료 메시지를 표시하는 함수
                         function showCopyMessage(target) {
